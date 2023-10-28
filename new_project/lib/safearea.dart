@@ -20,32 +20,43 @@ class _SafeAreaWidgetState extends State<SafeAreaWidget> {
             children: [
               Row(
                 children: [
-                  Container(
-                    margin: EdgeInsets.all(10),
-                    padding: EdgeInsets.all(10),
-                    height: 200,
-                    width: 200,
-                    decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: [Colors.white, Colors.black],
+                  TextButton(
+                    onPressed: () {},
+                    child: Container(
+                      margin: const EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
+                      height: 200,
+                      width: 200,
+                      decoration: BoxDecoration(
+                        gradient: const LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [Colors.white, Colors.black],
+                        ),
+                        // color: Colors.pinkAccent.shade100,
+                        borderRadius: const BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                        border: Border.all(color: Colors.black),
+                        boxShadow: const [
+                          BoxShadow(blurRadius: 20, color: Colors.black54),
+                        ],
                       ),
-                      // color: Colors.pinkAccent.shade100,
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(10),
+                      constraints: const BoxConstraints(
+                          maxWidth: 200,
+                          maxHeight: 200,
+                          minHeight: 200,
+                          minWidth: 200),
+                      child: const Text(
+                        softWrap: true,
+                        maxLines: 3,
+                        textAlign: TextAlign.start,
+                        'Container is a invisible widget.',
+                        style: TextStyle(
+                            fontSize: 27,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black),
                       ),
-                      border: Border.all(color: Colors.black),
-                      boxShadow: const [
-                        BoxShadow(blurRadius: 10, color: Colors.black54),
-                      ],
-                    ),
-                    child: const Text(
-                      'Container is a invisible widget.',
-                      style: TextStyle(
-                          fontSize: 27,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
                     ),
                   ),
                 ],

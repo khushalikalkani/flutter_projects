@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:new_project/container_widget.dart';
 import 'package:new_project/home_screen.dart';
+import 'package:new_project/resafearea.dart';
 import 'package:new_project/safearea.dart';
 
 void main() {
@@ -14,13 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SafeAreaWidget(),
+      home: const ReSafeAreaWidget(),
     );
   }
 }
