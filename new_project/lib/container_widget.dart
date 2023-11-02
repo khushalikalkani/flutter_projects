@@ -16,10 +16,12 @@ class _ContainerWidgetState extends State<ContainerWidget> {
         child: const Icon(Icons.add),
       ),
       appBar: AppBar(
-        title: Center(child: const Text('container')),
+
+        title: const Center(child: Text('container')),
         backgroundColor: Colors.green,
-        leading: Icon(Icons.arrow_back_ios),
+        leading: const Icon(Icons.arrow_back_ios),
         actions: const [
+
           Icon(
             Icons.search_rounded,
             color: Colors.black,
@@ -60,8 +62,8 @@ class _ContainerWidgetState extends State<ContainerWidget> {
               child: const Text('container'),
             ),
             Container(
-              margin: EdgeInsets.all(20),
-              padding: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(10),
               height: 200,
               width: 350,
               decoration: BoxDecoration(
@@ -91,8 +93,8 @@ class _ContainerWidgetState extends State<ContainerWidget> {
               child: const Text('container 1'),
             ),
             Container(
-              margin: EdgeInsets.all(20),
-              padding: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(10),
               height: 200,
               width: 300,
               decoration: BoxDecoration(
@@ -107,7 +109,7 @@ class _ContainerWidgetState extends State<ContainerWidget> {
                     color: Colors.white,
                   ),
                 ],
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: [Colors.lightBlue, Colors.indigo]),
@@ -115,8 +117,8 @@ class _ContainerWidgetState extends State<ContainerWidget> {
               child: const Text('container 2'),
             ),
             Container(
-              margin: EdgeInsets.all(20),
-              padding: EdgeInsets.all(20),
+              margin: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               height: 200,
               width: 350,
               decoration: BoxDecoration(
@@ -140,8 +142,8 @@ class _ContainerWidgetState extends State<ContainerWidget> {
               child: const Text('container 3'),
             ),
             Container(
-              margin: EdgeInsets.all(20),
-              padding: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(10),
               height: 200,
               width: 350,
               decoration: BoxDecoration(
@@ -171,8 +173,8 @@ class _ContainerWidgetState extends State<ContainerWidget> {
               child: const Text('container 4'),
             ),
             Container(
-              margin: EdgeInsets.all(20),
-              padding: EdgeInsets.all(30),
+              margin: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(30),
               height: 200,
               width: 300,
               decoration: BoxDecoration(
